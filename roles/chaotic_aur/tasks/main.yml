@@ -12,7 +12,7 @@
       - https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst
   when: caur_exists.stat.exists | default(true) == false
 - name: Install pacman config
-  copy:
+  template:
     dest: /etc/pacman.conf
     group: root
     mode: 0644

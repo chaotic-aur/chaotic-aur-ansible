@@ -8,6 +8,12 @@ Color
 NoProgressBar
 CheckSpace
 
+{% if caur_db_name == garuda %}
+[garuda]
+Include = /etc/pacman.d/chaotic-mirrorlist
+SigLevel = PackageRequired
+{% endif %}
+
 [core]
 Include = /etc/pacman.d/mirrorlist
 SigLevel = PackageRequired
