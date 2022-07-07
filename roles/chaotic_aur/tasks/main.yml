@@ -17,7 +17,7 @@
     group: root
     mode: 0644
     owner: root
-    src: pacman.conf
+    src: pacman.conf.j2
 - name: Configure pacman mirror
   copy:
     dest: /etc/pacman.d/mirrorlist
