@@ -1,4 +1,6 @@
 ---
+caur_db_name: chaotic-aur
+#caur_lower_pkgs: chaotic-mirrorlist
 caur_packager: "Nico Jensch <dr460nf1r3@chaotic.cx>"
 caur_sign_key: BF773B6877808D28
 caur_sign_realname: "Nico Jensch"
