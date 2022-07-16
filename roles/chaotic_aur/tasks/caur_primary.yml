@@ -25,7 +25,8 @@
     path: "{{ caur_repo_folder }}/chaotic-aur/{{ item }}"
     state: directory
   loop:
-    - "{{ caur_repo_folder }}/chaotic-aur/logs"
-    - "{{ caur_repo_folder }}/chaotic-aur/x86_64"
+    - "{{ caur_repo_folder }}/{{ caur_db_name }}/logs"
+    - "{{ caur_repo_folder }}/{{ caur_db_name }}/x86_64"
+
 #- name: Set correct permissions for the primary's repo folder
 #  shell: cd {{ caur_repo_folder}}/chaotic-aur && chmod g+s x86_64 logs && chown -R :chaotic_op x86_64 logs && chmod 664 x86_64/* logs/*'
