@@ -74,6 +74,15 @@
     force: yes
     repo: https://github.com/chaotic-aur/toolbox.git
     single_branch: yes
+- name: Adapt toolbox for garuda-repo builder
+  shell:
+    cmd: |
+      echo "
+      [chaotic-aur]
+      Include = /etc/pacman.d/chaotic-mirrorlist" >> pacman.conf
+  args:
+    chdir: /var/cache/garuda-{{ inventory_hostname }}/toolbox/guest/etc/
+  when: inventory_hostname == esxi-repo
 - name: Create chaotic_op group
   group:
     name: chaotic_op
