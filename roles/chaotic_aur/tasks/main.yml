@@ -82,7 +82,7 @@
       Include = /etc/pacman.d/chaotic-mirrorlist" >> pacman.conf
   args:
     chdir: /var/cache/garuda-{{ inventory_hostname }}/toolbox/guest/etc/
-  when: inventory_hostname == esxi-repo
+  when: '"esxi-repo" == inventory_hostname'
 - name: Create chaotic_op group
   group:
     name: chaotic_op
