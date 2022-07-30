@@ -4,6 +4,10 @@ HoldPkg      = pacman glibc garuda-system
 Architecture = auto
 ParallelDownloads = 10
 
+# Temporary to avoid incompatabilities
+IgnorePkg = python-telegram-send
+IgnorePkg = arch-install-scripts
+
 Color
 NoProgressBar
 CheckSpace

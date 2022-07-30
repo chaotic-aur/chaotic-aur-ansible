@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 export CAUR_SIGN_KEY={{ caur_sign_key }}
 export CAUR_SIGN_USER={{ caur_sign_user }}
-export CAUR_PACKAGER={{ caur_packager }}
+export CAUR_PACKAGER='"{{ caur_packager }}"'
 export CAUR_TYPE={{ caur_type }}
 export CAUR_URL={{ caur_url }}
 {% if caur_lower_pkgs is defined %}
@@ -17,7 +17,7 @@ export CAUR_FILL_DEST=http://repo.garudalinux.org/repos/${CAUR_DB_NAME}/pkgs.fil
 
 export CAUR_CLUSTER_NAME={{ caur_cluster_name }}
 export CAUR_DEPLOY_LABEL={{ caur_deploy_label }}
-export CAUR_TELEGRAM_TAG={{ caur_telegram_tag }}
+export CAUR_TELEGRAM_TAG='"{{ caur_telegram_tag }}"'
 
 export CAUR_ROUTINES={{ caur_routines }}
 
