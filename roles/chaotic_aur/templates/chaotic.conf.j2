@@ -13,7 +13,7 @@ export CAUR_DEPLOY_PKGS=/srv/http/repos/${CAUR_DB_NAME}/x86_64
 export CAUR_DEPLOY_LOGS=/srv/http/repos/${CAUR_DB_NAME}/logs
 export CAUR_DEPLOY_LOGS_FILTERED=${CAUR_DEPLOY_LOGS}/filtered
 export CAUR_DEPLOY_LAST=/srv/http/repos/${CAUR_DB_NAME}/lastupdate
-export CAUR_FILL_DEST=http://repo.garudalinux.org/repos/${CAUR_DB_NAME}/pkgs.files.txt
+export CAUR_FILL_DEST={{ caur_fill_dest }}
 
 export CAUR_CLUSTER_NAME={{ caur_cluster_name }}
 export CAUR_DEPLOY_LABEL={{ caur_deploy_label }}
